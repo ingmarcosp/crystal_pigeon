@@ -17,7 +17,7 @@ def write_podcast_rss(article_generator, writer):
                     posts_with_enclosures.append(article)
     podcast_xml = template.render(site_url=site_url, CRYSTAL_PIGEON=CRYSTAL_PIGEON, posts=posts_with_enclosures)
     podcast_path = os.path.join(writer.output_path, 'podcast.xml')
-    with open(podcast_path, 'w') as outfile:
+    with open(podcast_path, 'wb') as outfile:
         outfile.write(podcast_xml.encode('utf8'))
 
 def register():
