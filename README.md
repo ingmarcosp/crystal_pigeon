@@ -7,7 +7,7 @@ Description: A podcasting plugin for the [Pelican Static Site Generator](http://
 ## Installation
 
 Install new plugin as usual.
-Then add the following to `pelicanconf.py` 
+Then add the following to `pelicanconf.py`
 
     CRYSTAL_PIGEON = {}
     CRYSTAL_PIGEON['PODCAST_TITLE'] = "The crystal_pigeon sHOE"
@@ -33,11 +33,11 @@ The following example is for a markdown post.
     Tags: public transport, money
     Authors: Alexis Metaireau, Conan Doyle
     Summary: The metro should be free. I am being oppressed.
-    Enclosure_url: http://example.xxx/42.mp3
-    Enclosure_length: 10000
-    Enclosure_type: audio/mpeg
-    Enclosure_duration: 10:00
-    
+    enclosure_url: http://example.xxx/42.mp3
+    enclosure_length: 10000
+    enclosure_type: audio/mpeg
+    enclosure_duration: 10:00
+
     This is the content of my super blog post.
 
 Crystal Pigeon will find posts with that enclosure Metadata and add them as an episode to the `podcast.xml` at the root of the directory.
@@ -55,5 +55,3 @@ Initial Release
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-
